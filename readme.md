@@ -19,4 +19,5 @@ Options:
 This module also exports the `flowCopySource(sources, dest, options)` function.
 `sources` must be an array of strings, `dest` must be a string, and `options`
 may optionally be an object with a `verbose` boolean property. The function
-returns a promise.
+returns a promise for an array of `{src, dest}` objects listing the operations
+done.

@@ -25,6 +25,9 @@ module.exports = function flowCopySource(sources, dest, options) {
         console.log(result.src, '->', result.dest);
       }
     })
-    .map(() => null)
+    .scan((list, result) => {
+      list.push(result);
+      return list;
+    }, [])
     .toPromise();
 };
