@@ -1,0 +1,30 @@
+{
+  "name": "flow-copy",
+  "version": "1.0.0",
+  "description": "Script to copy javascript files and append \".flow\" to the filename.",
+  "main": "src/index.js",
+  "bin": {
+    "flow-copy": "./bin/flow-copy.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgentME/flow-copy.git"
+  },
+  "keywords": [
+    "flow",
+    "flowtype",
+    "build"
+  ],
+  "author": "Chris Cowan <agentme49@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AgentME/flow-copy/issues"
+  },
+  "homepage": "https://github.com/AgentME/flow-copy#readme",
+  "dependencies": {
+    "fs-extra": "^0.26.5",
+    "glob": "^7.0.0",
+    "kefir": "^3.2.0",
+    "yargs": "^3.32.0"
+  }
+}
