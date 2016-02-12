@@ -5,7 +5,7 @@ var Kefir = require('kefir');
 var kefirGlob = require('./kefir-glob');
 var kefirCopyFile = require('./kefir-copy-file');
 
-module.exports = function flowCopy(sources, dest, options) {
+module.exports = function flowCopySource(sources, dest, options) {
   var verbose = options && options.verbose;
   return Kefir.merge(
       sources.map(src =>

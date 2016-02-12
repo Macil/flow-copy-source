@@ -1,4 +1,4 @@
-# flow-copy
+# flow-copy-source
 
 This is a simple script which finds all .js and .jsx files in one or more
 source directories, and copies them into a destination directory with the
@@ -10,13 +10,13 @@ the transpiled code, so that Flow can use the type definitions in the original
 source code.
 
 ```
-Usage: flow-copy [-v|--verbose] SRC... DEST
+Usage: flow-copy-source [-v|--verbose] SRC... DEST
 
 Options:
   -v, --verbose  Show changes                                          [boolean]
 ```
 
-This module also exports the `flowCopy(sources, dest, options)` function.
+This module also exports the `flowCopySource(sources, dest, options)` function.
 `sources` must be an array of strings, `dest` must be a string, and `options`
 may optionally be an object with a `verbose` boolean property. The function
 returns a promise.
