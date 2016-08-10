@@ -7,9 +7,10 @@ var kefirCopyFile = require('./kefir-copy-file');
 
 module.exports = function flowCopySource(sources, dest, options) {
   var verbose = options && options.verbose;
+  var ignore = options && options.ignore;
   return Kefir.merge(
       sources.map(src =>
-        kefirGlob('**/*.js?(x)', {cwd: src, strict: true})
+        kefirGlob('**/*.js?(x)', {cwd: src, strict: true, ignore: ignore})
           .map(match => ({src, match}))
       )
     )
