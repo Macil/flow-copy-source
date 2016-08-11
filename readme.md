@@ -10,10 +10,11 @@ the transpiled code, so that Flow can use the type definitions in the original
 source code.
 
 ```
-Usage: flow-copy-source [-v|--verbose] SRC... DEST
+Usage: flow-copy-source [-v|--verbose] [-i PATTERN]... SRC... DEST
 
 Options:
   -v, --verbose  Show changes                                          [boolean]
+  -i, --ignore   ignore pattern (glob expression)
 ```
 
 This module also exports the `flowCopySource(sources, dest, options)` function.
