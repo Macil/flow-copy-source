@@ -10,15 +10,16 @@ the transpiled code, so that Flow can use the type definitions in the original
 source code.
 
 ```
-Usage: flow-copy-source [-v|--verbose] [-i PATTERN]... SRC... DEST
+Usage: bin/flow-copy-source.js [-v|--verbose] [-w|--watch] [-i PATTERN]... SRC... DEST
 
 Options:
   -v, --verbose  Show changes                                          [boolean]
+  -w, --watch    Re-copy files on change                               [boolean]
   -i, --ignore   ignore pattern (glob expression)
 ```
 
 This module also exports the `flowCopySource(sources, dest, options)` function.
 `sources` must be an array of strings, `dest` must be a string, and `options`
-may optionally be an object with a `verbose` boolean property. The function
-returns a promise for an array of `{src, dest}` objects listing the operations
-done.
+may optionally be an object with optional `verbose` and `watch` boolean
+properties. The function returns a promise for an array of `{src, dest}`
+objects listing the operations done.

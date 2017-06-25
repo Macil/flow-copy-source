@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/AgentME/flow-copy-source#readme",
   "dependencies": {
+    "chokidar": "^1.7.0",
     "fs-extra": "^3.0.1",
     "glob": "^7.0.0",
     "kefir": "^3.2.0",
