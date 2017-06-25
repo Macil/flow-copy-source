@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/AgentME/flow-copy-source#readme",
   "dependencies": {
-    "fs-extra": "^0.26.5",
+    "fs-extra": "^3.0.1",
     "glob": "^7.0.0",
     "kefir": "^3.2.0",
     "yargs": "^3.32.0"
