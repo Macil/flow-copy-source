@@ -4,9 +4,12 @@
 var flowCopy = require('..');
 
 var argv = require('yargs')
-  .usage('Usage: $0 [-v|--verbose] [-w|--watch] [-i PATTERN]... SRC... DEST')
+  .usage('Usage: $0 [-v|--verbose] [-w|--watch] [-f|--file-pattern PATTERN] [-i PATTERN]... SRC... DEST')
   .boolean('verbose')
   .boolean('watch')
+  .alias('f', 'file-pattern')
+  .describe('f', 'file pattern (glob expression)')
+  .default('f', '**/*.js?(x)')
   .alias('v', 'verbose')
   .describe('v', 'Show changes')
   .alias('w', 'watch')
@@ -20,8 +23,12 @@ var argv = require('yargs')
 var srcs = argv._.slice(0, -1);
 var dest = argv._[argv._.length-1];
 
-flowCopy(srcs, dest, {verbose: argv.verbose, ignore: argv.ignore, watch: argv.watch})
-  .catch(err => {
-    console.error(err);
-    process.exit(1);
-  });
+flowCopy(srcs, dest, {
+  filePattern: argv.filePattern,
+  verbose: argv.verbose,
+  ignore: argv.ignore,
+  watch: argv.watch,
+}).catch(err => {
+  console.error(err)
+  process.exit(1)
+})

@@ -13,9 +13,10 @@ source code.
 Usage: bin/flow-copy-source.js [-v|--verbose] [-w|--watch] [-i PATTERN]... SRC... DEST
 
 Options:
-  -v, --verbose  Show changes                                          [boolean]
-  -w, --watch    Re-copy files on change                               [boolean]
-  -i, --ignore   ignore pattern (glob expression)
+  -v, --verbose       Show changes                                          [boolean]
+  -w, --watch         Re-copy files on change                               [boolean]
+  -i, --ignore        ignore pattern (glob expression)
+  -f, --file-pattern  file pattern (glob expression, default)
 ```
 
 This module also exports the `flowCopySource(sources, dest, options)` function.
