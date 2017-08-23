@@ -1,5 +1,7 @@
 # flow-copy-source
 
+[![npm version](https://badge.fury.io/js/flow-copy-source.svg)](https://badge.fury.io/js/flow-copy-source)
+
 This is a simple script which finds all .js and .jsx files in one or more
 source directories, and copies them into a destination directory with the
 .flow suffix appended to the filename.
