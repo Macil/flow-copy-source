@@ -12,6 +12,8 @@ module.exports = function flowCopySource(sources, dest, options) {
   var ignore = options && options.ignore;
   var watch = options && options.watch;
 
+  ignore = (typeof ignore === 'string') ? ignore.split(",") : ignore
+
   return Kefir.merge(
       sources.map(src => {
         var filesToCopy;
