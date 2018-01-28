@@ -20,6 +20,9 @@ Options:
   -i, --ignore   ignore pattern (glob expression)
 ```
 
+Multiple `--ignore` patterns may be given by using the `--ignore` option
+multiple times.
+
 This module also exports the `flowCopySource(sources, dest, options)` function.
 `sources` must be an array of strings, `dest` must be a string, and `options`
 may optionally be an object with optional `verbose` and `watch` boolean
