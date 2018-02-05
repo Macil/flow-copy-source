@@ -5,7 +5,7 @@ var Kefir = require('kefir');
 var kefirGlob = require('./kefir-glob');
 var kefirCopyFile = require('./kefir-copy-file');
 
-var jsAndJsxPattern = '**/*.?(m)js?(x)';
+var jsAndJsxPattern = '**/*.{js, mjs, jsx}';
 
 module.exports = function flowCopySource(sources, dest, options) {
   var verbose = options && options.verbose;
