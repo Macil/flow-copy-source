@@ -1,6 +1,6 @@
 {
   "name": "flow-copy-source",
-  "version": "1.2.2",
+  "version": "1.3.0",
   "description": "Script to copy javascript files and append \".flow\" to the filename.",
   "main": "src/index.js",
   "bin": {
