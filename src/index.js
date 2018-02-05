@@ -1,23 +1,23 @@
 'use strict';
 
-var path = require('path');
-var Kefir = require('kefir');
-var kefirGlob = require('./kefir-glob');
-var kefirCopyFile = require('./kefir-copy-file');
+const path = require('path');
+const Kefir = require('kefir');
+const kefirGlob = require('./kefir-glob');
+const kefirCopyFile = require('./kefir-copy-file');
 
-var jsAndJsxPattern = '**/*.{js,mjs,jsx}';
+const jsAndJsxPattern = '**/*.{js,mjs,jsx}';
 
 module.exports = function flowCopySource(sources, dest, options) {
-  var verbose = options && options.verbose;
-  var ignore = options && options.ignore;
-  var watch = options && options.watch;
+  const verbose = options && options.verbose;
+  const ignore = options && options.ignore;
+  const watch = options && options.watch;
 
   return Kefir.merge(
       sources.map(src => {
-        var filesToCopy;
+        let filesToCopy;
         if (watch) {
-          var chokidar = require('chokidar');
-          var watcher = chokidar.watch(jsAndJsxPattern, {cwd: src, ignored: ignore});
+          const chokidar = require('chokidar');
+          const watcher = chokidar.watch(jsAndJsxPattern, {cwd: src, ignored: ignore});
           filesToCopy = Kefir.merge([
             Kefir.fromEvents(watcher, 'add'),
             Kefir.fromEvents(watcher, 'change')
