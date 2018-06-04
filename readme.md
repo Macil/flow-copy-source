@@ -1,6 +1,8 @@
 # flow-copy-source
 
-[![npm version](https://badge.fury.io/js/flow-copy-source.svg)](https://badge.fury.io/js/flow-copy-source)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/AgentME/flow-copy-source/blob/master/LICENSE.txt)
+[![npm version](https://img.shields.io/npm/v/flow-copy-source.svg?style=flat)](https://www.npmjs.com/package/flow-copy-source)
+[![CircleCI Status](https://circleci.com/gh/AgentME/flow-copy-source.svg?style=shield)](https://circleci.com/gh/AgentME/flow-copy-source)
 
 This is a simple script which finds all .js, .jsx, and .mjs files in one or
 more source directories, and copies them into a destination directory with the
