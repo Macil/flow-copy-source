@@ -6,6 +6,9 @@
   "bin": {
     "flow-copy-source": "./bin/flow-copy-source.js"
   },
+  "scripts": {
+    "test": "jest"
+  },
   "engines": {
     "node": ">=4.0.0"
   },
@@ -30,5 +33,9 @@
     "glob": "^7.0.0",
     "kefir": "^3.7.3",
     "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "jest": "^23.1.0",
+    "tmp": "0.0.33"
   }
 }
