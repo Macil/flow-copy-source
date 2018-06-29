@@ -1,6 +1,10 @@
 This project follows the [Semantic Versioning](https://semver.org/) convention,
 so breaking changes will only be made in major version updates.
 
+## 2.0.1 (2018-06-29)
+
+* Update [yargs dependency](https://yargs.js.org/) from ^11.1.0 to ^12.0.1.
+
 ## 2.0.0 (2018-06-04)
 
 * Update fs-extra and [drop support for Node.js versions before
