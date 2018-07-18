@@ -1,6 +1,11 @@
 This project follows the [Semantic Versioning](https://semver.org/) convention,
 so breaking changes will only be made in major version updates.
 
+## 2.0.2 (2018-07-18)
+
+* Update [fs-extra 
+dependency](https://github.com/jprichardson/node-fs-extra) to 7.0.
+
 ## 2.0.1 (2018-06-29)
 
 * Update [yargs dependency](https://yargs.js.org/) from ^11.1.0 to ^12.0.1.
