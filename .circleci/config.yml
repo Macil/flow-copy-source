@@ -28,6 +28,7 @@ jobs:
             - node_modules/
             - ~/.yarn/bin/
             - ~/.config/yarn/global/
+            - ~/.cache/yarn
       - run: greenkeeper-lockfile-update
       - run: yarn test
       - run: greenkeeper-lockfile-upload
