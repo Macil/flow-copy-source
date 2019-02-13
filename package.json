@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AgentME/flow-copy-source.git"
+    "url": "git+https://github.com/Macil/flow-copy-source.git"
   },
   "keywords": [
     "flow",
@@ -24,9 +24,9 @@
   "author": "Chris Cowan <agentme49@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/AgentME/flow-copy-source/issues"
+    "url": "https://github.com/Macil/flow-copy-source/issues"
   },
-  "homepage": "https://github.com/AgentME/flow-copy-source#readme",
+  "homepage": "https://github.com/Macil/flow-copy-source#readme",
   "dependencies": {
     "chokidar": "^2.0.0",
     "fs-extra": "^7.0.0",
