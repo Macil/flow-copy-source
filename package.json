@@ -9,6 +9,9 @@
   "scripts": {
     "test": "jest"
   },
+  "sideEffects": [
+    "./bin/flow-copy-source.js"
+  ],
   "engines": {
     "node": ">=8.0.0"
   },
