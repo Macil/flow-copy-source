@@ -1,6 +1,10 @@
 This project follows the [Semantic Versioning](https://semver.org/) convention,
 so breaking changes will only be made in major version updates.
 
+## 2.0.4 (2019-04-30)
+
+* Updated [chokidar dependency](https://github.com/paulmillr/chokidar) from v2 to v3.
+
 ## 2.0.3 (2019-02-12)
 
 * Updated [yargs dependency](https://yargs.js.org/) from v12 to v13.
