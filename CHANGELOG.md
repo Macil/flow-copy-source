@@ -1,6 +1,11 @@
 This project follows the [Semantic Versioning](https://semver.org/) convention,
 so breaking changes will only be made in major version updates.
 
+## 2.0.5 (2019-05-12)
+
+* Updated [fs-extra
+dependency](https://github.com/jprichardson/node-fs-extra) to 8.0.
+
 ## 2.0.4 (2019-04-30)
 
 * Updated [chokidar dependency](https://github.com/paulmillr/chokidar) from v2 to v3.
