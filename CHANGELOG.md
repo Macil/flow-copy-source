@@ -1,6 +1,11 @@
 This project follows the [Semantic Versioning](https://semver.org/) convention,
 so breaking changes will only be made in major version updates.
 
+## 2.0.7 (2019-07-01)
+
+* Updated [fs-extra
+dependency](https://github.com/jprichardson/node-fs-extra) to 8.1.0 now that graceful-fs fixed its incompatibility with fs-extra.
+
 ## 2.0.6 (2019-05-12)
 
 * Reverted [fs-extra
