@@ -35,7 +35,7 @@
     "fs-extra": "^8.1.0",
     "glob": "^7.0.0",
     "kefir": "^3.7.3",
-    "yargs": "^13.1.0"
+    "yargs": "^14.0.0"
   },
   "devDependencies": {
     "jest": "^24.1.0",
