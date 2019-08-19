@@ -1,6 +1,10 @@
 This project follows the [Semantic Versioning](https://semver.org/) convention,
 so breaking changes will only be made in major version updates.
 
+## 2.0.8 (2019-08-19)
+
+* Updated [yargs dependency](https://yargs.js.org/) from v13 to v14.
+
 ## 2.0.7 (2019-07-01)
 
 * Updated [fs-extra
