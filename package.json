@@ -40,5 +40,8 @@
   "devDependencies": {
     "jest": "^24.1.0",
     "tmp": "0.1.0"
+  },
+  "jest": {
+    "testEnvironment": "node"
   }
 }
